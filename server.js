@@ -57,6 +57,11 @@ app.get('/about', (req, res) => {
   });
 });
 
+//projects page
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs');
+});
+
 //send obj that is displayed at /bad
 app.get('/bad', (req, res) => {
   res.send({
